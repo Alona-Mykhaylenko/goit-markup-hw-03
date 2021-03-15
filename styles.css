@@ -1,0 +1,298 @@
+/* Стили, общие для всего документа */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --body-bg-color: #e5e5e5;
+  --secondary-bg-color: #f5f4fa;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --logo-studio-color: #000000;
+  --hero-footer-color: #2f303a;
+}
+
+body {
+  margin: 0;
+
+  color: var(--primary-text-color);
+  background-color: var(--body-bg-color);
+
+  font-family: 'Roboto', 'apple-system', 'BlinkMacSystemFont', 'avenir next',
+    'avenir', 'helvetica neue', 'helvetica', 'Ubuntu', 'noto', 'segoe ui',
+    'arial', sans-serif;
+  letter-spacing: 0.03em;
+  font-weight: 400;
+}
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+  padding-inline-start: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+.title {
+  color: var(--title-text-color);
+}
+
+h1,h2,h3{
+margin-top: 0;
+}
+
+p{
+  margin: 0;
+}
+
+/* Шапка страницы с элементами навигации */
+.main-nav {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.header-section {
+  background-color: var(--primary-bg-color);
+  height: 80px;
+  margin-bottom: 0;
+}
+
+.logo {
+  color: var(--accent-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+
+  text-decoration: none;
+}
+
+.logo .studio-header {
+  color: var(--logo-studio-color);
+}
+
+.logo .studio-footer {
+  color: var(--primary-bg-color);
+}
+
+.site-navigation {
+  display: flex;
+}
+
+.site-navigation .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.site-navigation .link:hover,
+.site-navigation .link:focus {
+  color: var(--accent-color);
+}
+
+.site-navigation .link.current{
+  color: var(--accent-color);
+}
+
+.header-contacts {
+  display: flex;
+}
+
+.header-contacts .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-contacts .link:hover,
+.header-contacts .link:focus {
+  color: var(--accent-color);
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+
+  outline: 2px solid tomato;
+}
+
+/* Секция - герой */
+.hero {
+margin-bottom: 94px;
+text-align: center;
+
+  background-color: var(--hero-footer-color);
+  height: 600px;
+
+  outline: 2px solid tomato;
+}
+
+
+.hero .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  color: var(--primary-bg-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero .button {
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* Секция - Наши преимущества */
+
+.advantages-section{
+  margin-bottom: 94px;
+  color: red;
+}
+
+.advantages-list .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.advantages-list .text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Секция - Чем мы занимаемся */
+
+.activities-section{
+  margin-bottom: 94px;
+}
+
+.activities-section .section-title,
+.team-section .section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.activities-section .section-title{
+  margin-bottom: 50px;
+}
+
+/* Секция - Наша команда */
+.team-section {
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: var(--secondary-bg-color);
+}
+
+.team-section .title {
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-section .section-title{
+  margin-bottom: 50px;
+}
+
+.team-section .text {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-list .image{
+  margin-bottom: 30px;
+}
+
+/* Секция - Футер */
+.footer-section {
+  padding-bottom: 60px;
+  padding-top: 60px;
+
+  background-color: var(--hero-footer-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+address {
+  color: var(--primary-bg-color);
+  font-style: normal;
+}
+
+.footer-section .link {
+  color: var(--footer-text-color);
+}
+
+.footer-section .link:hover,
+.footer-section .link:focus {
+  color: var(--accent-color);
+}
+
+.footer-list .logo{
+  margin-bottom: 20px;
+}
+
+/* PORTFOLIO HTML */
+
+/* Верхнее меню кнопок (фильтр содержимого страницы) */
+
+.button-secondary {
+  color: var(--title-text-color);
+  background-color: #ffffff;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+}
+
+/* Список проектов */
