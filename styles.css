@@ -68,13 +68,16 @@ p{
 .main-nav {
   display: flex;
   align-items: center;
-  height: 80px;
 }
 
 .header-section {
   background-color: var(--primary-bg-color);
   height: 80px;
   margin-bottom: 0;
+}
+
+.main-nav .logo{
+  margin-right: 90px;
 }
 
 .logo {
@@ -98,7 +101,27 @@ p{
   display: flex;
 }
 
+.site-navigation .item{
+  margin-right: 50px;
+  height: inherit;
+}
+
+.site-navigation .item + .item{
+  margin-left: 50px;
+}
+
+/* .site-navigation .item:not(:last-child){
+  margin-right: 50px;
+} */
+
+/* .site-navigation .item:last-child{
+  margin-right: 0;
+} */
+
 .site-navigation .link {
+  display: block;
+  padding: 32px 0;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -117,6 +140,11 @@ p{
 
 .header-contacts {
   display: flex;
+  margin-left: auto;
+}
+
+.header-contacts .item +.item{
+  margin-left: 50px;
 }
 
 .header-contacts .link {
@@ -136,14 +164,20 @@ p{
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 
   outline: 2px solid tomato;
 }
 
 /* Секция - герой */
+
+
 .hero {
-margin-bottom: 94px;
-text-align: center;
+ text-align: center;
+
+  margin-bottom: 94px;
+  text-align: center;
 
   background-color: var(--hero-footer-color);
   height: 600px;
@@ -151,6 +185,10 @@ text-align: center;
   outline: 2px solid tomato;
 }
 
+.hero-container{
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 
 .hero .hero-title {
   margin-top: 0;
@@ -185,7 +223,19 @@ text-align: center;
 
 .advantages-section{
   margin-bottom: 94px;
-  color: red;
+}
+
+.advantages-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages-list .item{
+  width: calc((100% - 90px) / 4);
+}
+
+.advantages-list .item:not(:nth-child(4n+4)){
+  margin-right: 30px;
 }
 
 .advantages-list .title {
@@ -218,6 +268,15 @@ text-align: center;
   margin-bottom: 50px;
 }
 
+.activities-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.activities-list .item:not(:nth-child(3n+3)){
+  margin-right: 30px;
+}
+
 /* Секция - Наша команда */
 .team-section {
   text-align: center;
@@ -244,8 +303,17 @@ text-align: center;
   line-height: 1.19;
 }
 
-.team-list .image{
-  margin-bottom: 30px;
+.team-list{
+  display: flex;
+}
+
+.team-list .item:not(:last-child){
+  margin-right: 30px;
+}
+
+.team-member-info{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* Секция - Футер */
